@@ -1,11 +1,123 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from "../layouts/BaseLayout.astro"
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout title="Alexandrei Delgadillo – Full Stack Developer">
+  <section class="mb-8">
+    <h1 class="text-4xl font-bold mb-2 text-indigo-400">
+      Alexandrei Delgadillo
+    </h1>
+    <p class="text-lg text-neutral-300">Full Stack Developer</p>
+    <p class="mt-1 text-neutral-400">React · Node.js · .NET</p>
+  </section>
+
+  <hr class="border-neutral-800 my-6" />
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold mb-4 tracking-tight text-neutral-100">
+      About
+    </h2>
+    <p class="text-neutral-300 leading-relaxed">
+      I’m a Full Stack Developer with strong experience in both front-end and
+      back-end development. I started with .NET and later transitioned to
+      Node.js and React, building and maintaining production applications,
+      integrating third-party services, and delivering features in agile teams.
+    </p>
+  </section>
+
+  <hr class="border-neutral-800 my-6" />
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold mb-4 tracking-tight text-neutral-100">
+      Projects & Experience
+    </h2>
+
+    <!-- AjaUnChiste -->
+    <div class="mb-4">
+      <h3 class="text-xl font-semibold mb-1">AjaUnChiste – Android App</h3>
+      <p class="text-neutral-300 mb-1">
+        Mobile-first Android app built with React and Capacitor, focused on
+        clean UI and performance.
+      </p>
+      <p class="text-neutral-400 mb-1">
+        Stack: React, JavaScript, Capacitor, Tailwind
+      </p>
+      <p class="text-neutral-400">Status: Play Store approval pending</p>
+    </div>
+
+    <!-- Professional Experience -->
+    <div>
+      <h3 class="text-xl font-semibold mb-1">
+        Professional Work – Full Stack Developer
+      </h3>
+      <p class="text-neutral-300 mb-1">
+        Over 9 years of experience building and maintaining production web
+        applications across industries.
+      </p>
+      <ul class="list-disc list-inside text-neutral-300 space-y-1">
+        <li>
+          Built and maintained React and Node.js applications in production
+        </li>
+        <li>Designed and consumed GraphQL APIs using Hasura and Apollo</li>
+        <li>Integrated third-party services such as Stripe and Salesforce</li>
+        <li>Migrated legacy systems to modern front-end stacks</li>
+        <li>Collaborated in agile, cross-functional teams</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="border-neutral-800 my-6" />
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold mb-4 tracking-tight text-neutral-100">
+      Skills
+    </h2>
+    <div class="space-y-1 text-neutral-300">
+      <p>
+        <strong>Frontend:</strong> React, Next.js, Angular, Tailwind, TypeScript
+      </p>
+      <p><strong>Backend:</strong> Node.js, .NET Core, GraphQL</p>
+      <p><strong>Databases:</strong> SQL Server, MongoDB, MySQL</p>
+      <p><strong>Cloud & Tools:</strong> Azure, AWS (basic), Git</p>
+    </div>
+  </section>
+
+  <hr class="border-neutral-800 my-6" />
+
+  <section>
+    <h2 class="text-2xl font-semibold mb-4 tracking-tight text-neutral-100">
+      Contact
+    </h2>
+    <ul class="space-y-1 text-neutral-300">
+      <li>
+        Email:
+        <a
+          href="mailto:alexandreirdp@gmail.com"
+          class="text-neutral-100 underline"
+        >
+          alexandreirdp@gmail.com
+        </a>
+      </li>
+      <li>
+        LinkedIn:
+        <a
+          href="https://linkedin.com/in/alexandreidelgadillo"
+          target="_blank"
+          class="text-neutral-100 underline"
+        >
+          linkedin.com/in/alexandreidelgadillo
+        </a>
+      </li>
+      <li>
+        GitHub:
+        <a
+          href="https://github.com/YOUR_GITHUB"
+          target="_blank"
+          class="text-neutral-100 underline"
+        >
+          github.com/ARDP
+        </a>
+      </li>
+    </ul>
+  </section>
+</BaseLayout>
