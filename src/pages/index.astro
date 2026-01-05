@@ -4,140 +4,138 @@ import BaseLayout from "../layouts/BaseLayout.astro"
 
 <BaseLayout title="Alexandrei Delgadillo – Full Stack Developer">
   <!-- Hero -->
-  <section class="mb-8 text-center">
-    <h1 class="text-4xl font-bold text-indigo-400 mb-2">
-      Alexandrei Delgadillo
-    </h1>
-    <p class="text-lg text-neutral-300">Full Stack Developer</p>
-    <p class="mt-1 text-neutral-400">React · Node.js · .NET</p>
-  </section>
+  <section
+    class="text-center bg-white p-6 flex flex-col md:flex-row md:justify-between md:items-start"
+  >
+    <div class="order-2 md:order-1 text-center md:text-left flex-1">
+      <h1 class="text-4xl font-bold mb-2 text-black">Alexandrei Delgadillo</h1>
+      <p class="text-lg text-black">Full Stack Developer</p>
+      <p class="mt-1 text-black">React · Node.js · .NET · GraphQL</p>
+    </div>
 
-  <hr class="border-neutral-800 my-6" />
+    <div
+      class="order-1 md:order-2 mb-4 md:mb-0 flex justify-center md:justify-end"
+    >
+      <img src="/dog1.png" class="tailDog" alt="Tail of Dachshund" />
+    </div>
+  </section>
 
   <!-- About -->
   <section class="mb-8">
-    <h2 class="text-2xl font-semibold mb-3 text-neutral-100">About</h2>
-    <p class="text-neutral-300 leading-relaxed">
-      I’m a Full Stack Developer with experience building performant, scalable
-      apps. I began with .NET and later transitioned to Node.js and React —
-      delivering features in agile teams.
-    </p>
-  </section>
-
-  <hr class="border-neutral-800 my-6" />
-
-  <!-- Projects Cards -->
-  <section class="mb-8">
-    <h2 class="text-2xl font-semibold mb-4 text-neutral-100">
-      Projects & Experience
-    </h2>
-
-    <div class="grid gap-6 md:grid-cols-2">
-      <!-- AjaUnChiste Card -->
-      <div
-        class="bg-neutral-900 p-5 rounded-lg border border-neutral-800 hover:shadow-lg transition shadow-none"
-      >
-        <h3 class="text-xl font-semibold text-indigo-300">
-          AjaUnChiste – Android App
-        </h3>
-        <p class="text-neutral-300 mt-2">
-          Mobile-first Android app built with React and Capacitor focused on
-          clean UI.
-        </p>
-        <p class="text-neutral-400 mt-2">
-          <strong>Stack:</strong> React, JavaScript, Capacitor, Tailwind
-        </p>
-        <p class="text-neutral-400 mt-1">
-          <strong>Status:</strong> Play Store pending
-        </p>
-      </div>
-
-      <!-- Professional Experience Card -->
-      <div
-        class="bg-neutral-900 p-5 rounded-lg border border-neutral-800 hover:shadow-lg transition shadow-none"
-      >
-        <h3 class="text-xl font-semibold text-indigo-300">
-          Professional – Full Stack Developer
-        </h3>
-        <p class="text-neutral-300 mt-2">
-          9+ years building and maintaining production web applications.
-        </p>
-        <ul class="list-disc list-inside text-neutral-300 mt-2 space-y-1">
-          <li>Built React & Node.js apps in production</li>
-          <li>Designed/consumed GraphQL APIs (Hasura, Apollo)</li>
-          <li>Integrated services like Stripe & Salesforce</li>
-          <li>Migrated legacy systems to modern stacks</li>
-          <li>Worked in agile, cross‑functional teams</li>
-        </ul>
-      </div>
+    <div class="newspaper-card paper-light">
+      <h2 class="text-3xl font-newspaper-title mb-4">About Me</h2>
+      <p class="font-newspaper-text">
+        I’m a Full Stack Developer with 9+ years of experience building
+        performant, scalable web and mobile apps. I began with .NET and later
+        transitioned to Node.js and React — delivering features in agile teams.
+        <br /><br />
+        I enjoy designing clean, user-friendly interfaces and solving challenging
+        problems that improve real-world workflows. My passion is creating software
+        that’s both functional and delightful to use.
+      </p>
     </div>
   </section>
 
-  <hr class="border-neutral-800 my-6" />
+  <hr class="newspaper-hr" />
+
+  <!-- Projects & Experience -->
+  <section class="mb-8 bg-white">
+    <h2 class="text-3xl font-newspaper-title mb-6">Projects & Experience</h2>
+    <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2">
+      <div class="newspaper-card">
+        <h3 class="text-2xl font-newspaper-title mb-2">Power Pickleball</h3>
+        <p class="font-newspaper-text mb-2">
+          Platform for pickleball leagues, tournaments, and community
+          interaction.
+        </p>
+        <ul class="list-disc list-inside font-newspaper-text">
+          <li>Designed user & organizer profiles</li>
+          <li>Team & match management tools</li>
+          <li>Focused on engagement</li>
+        </ul>
+        <p class="font-newspaper-text font-bold mt-2">
+          <strong>Impact:</strong> Boosted community engagement.
+          <a
+            href="https://www.capicua.com/work/power-pickleball"
+            target="_blank"
+            class="underline text-blue-700">View Case Study</a
+          >
+        </p>
+      </div>
+
+      <div class="newspaper-card paper-dark">
+        <h3 class="text-2xl font-newspaper-title mb-2">HelloFund</h3>
+        <p class="font-newspaper-text mb-2">
+          Smart fundraising platform for campaigns, donations, events.
+        </p>
+        <ul class="list-disc list-inside font-newspaper-text">
+          <li>Custom pages & donation settings</li>
+          <li>Integrated payment workflows</li>
+          <li>Redesigned for usability</li>
+        </ul>
+        <p class="font-newspaper-text font-bold mt-2">
+          <strong>Impact:</strong> 92% of campaigns reached goals.
+          <a
+            href="https://www.capicua.com/work/hellofund"
+            target="_blank"
+            class="underline text-blue-700">View Case Study</a
+          >
+        </p>
+      </div>
+    </div>
+  </section>
 
   <!-- Skills -->
-  <section class="mb-8">
-    <h2 class="text-2xl font-semibold mb-3 text-neutral-100">Skills</h2>
-    <div class="flex flex-wrap gap-2">
-      <span class="bg-indigo-600 text-white text-sm px-3 py-1 rounded"
-        >React</span
-      >
-      <span class="bg-indigo-600 text-white text-sm px-3 py-1 rounded"
-        >Node.js</span
-      >
-      <span class="bg-indigo-600 text-white text-sm px-3 py-1 rounded"
-        >.NET Core</span
-      >
-      <span class="bg-indigo-600 text-white text-sm px-3 py-1 rounded"
-        >GraphQL</span
-      >
-      <span class="bg-indigo-600 text-white text-sm px-3 py-1 rounded"
-        >Tailwind</span
-      >
-      <span class="bg-indigo-600 text-white text-sm px-3 py-1 rounded"
-        >TypeScript</span
-      >
-      <span class="bg-indigo-600 text-white text-sm px-3 py-1 rounded"
-        >SQL/MongoDB</span
-      >
-      <span class="bg-indigo-600 text-white text-sm px-3 py-1 rounded"
-        >Azure/AWS</span
-      >
+  <section class="mb-8 p-6">
+    <h2 class="text-3xl font-newspaper-title mb-4">Skills</h2>
+    <div class="flex flex-wrap gap-3">
+      <span class="newspaper-badge">React</span>
+      <span class="newspaper-badge">Node.js</span>
+      <span class="newspaper-badge">.NET</span>
+      <span class="newspaper-badge">GraphQL</span>
+      <span class="newspaper-badge">Tailwind</span>
+      <span class="newspaper-badge">TypeScript</span>
+      <span class="newspaper-badge">SQL</span>
+      <span class="newspaper-badge">AWS</span>
     </div>
   </section>
 
-  <hr class="border-neutral-800 my-6" />
-
   <!-- Contact -->
-  <section>
-    <h2 class="text-2xl font-semibold mb-3 text-neutral-100">Contact</h2>
-    <ul class="space-y-1 text-neutral-300">
-      <li>
-        Email: <a
-          href="mailto:alexandreirdp@gmail.com"
-          class="underline text-neutral-100"
-        >
-          alexandreirdp@gmail.com
-        </a>
-      </li>
-      <li>
-        LinkedIn: <a
-          href="https://linkedin.com/in/alexandreidelgadillo"
-          target="_blank"
-          class="underline text-neutral-100"
-        >
-          linkedin.com/in/alexandreidelgadillo
-        </a>
-      </li>
-      <li>
-        GitHub: <a
-          href="https://github.com/YOUR_GITHUB"
-          target="_blank"
-          class="underline text-neutral-100"
-        >
-          github.com/ARDP
-        </a>
-      </li>
-    </ul>
+  <section
+    class="mb-6 wide footer-bar newspaper-card flex flex-col md:flex-row md:justify-between md:items-end gap-6"
+  >
+    <div>
+      <h2 class="text-2xl font-newspaper-title mb-4 flex items-center gap-2">
+        <span>📰</span> Contact
+      </h2>
+      <ul class="font-newspaper-text space-y-3">
+        <li class="flex items-center gap-2">
+          <span class="contact-icon">✉️</span>
+          <a href="mailto:alexandreirdp@gmail.com" class="newspaper-link"
+            >alexandreirdp@gmail.com</a
+          >
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="contact-icon">🔗</span>
+          <a
+            href="https://linkedin.com/in/alexandreidelgadillo"
+            target="_blank"
+            class="newspaper-link">in/alexandreidelgadillo</a
+          >
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="contact-icon">💻</span>
+          <a
+            href="https://github.com/ardp"
+            target="_blank"
+            class="newspaper-link">github.com/ARDP</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="flex justify-center md:justify-end">
+      <img src="/dog3.png" class="headDog" alt="Head of Dachshund" />
+    </div>
   </section>
 </BaseLayout>
