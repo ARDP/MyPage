@@ -6,91 +6,106 @@ import "./FooterSection.css"
   <div
     class="grid grid-cols-1 md:grid-cols-3 gap-0 bg-white items-stretch border-2 border-black"
   >
-    <div class="p-4 md:border-r border-black">
-      <h2 class="text-2xl font-newspaper-title mb-4">Contact</h2>
-      <div class="space-y-3">
-        <div>
-          <span
-            class="block text-[9px] font-black uppercase text-black/40 italic"
-            >Direct Line</span
-          >
-          <a
-            href="mailto:alexandreirdp@gmail.com"
-            class="newspaper-link font-bold text-sm">alexandreirdp@gmail.com</a
-          >
-        </div>
-        <div>
-          <span
-            class="block text-[9px] font-black uppercase text-black/40 italic"
-            >Digital Wire</span
-          >
-          <div class="flex flex-col gap-1">
-            <a
-              href="https://linkedin.com/in/alexandreidelgadillo"
-              target="_blank"
-              class="newspaper-link text-xs font-bold italic"
-              >LinkedIn/alexandreidelgadillo</a
+    <!-- CONTACT -->
+    <div class="p-4 md:border-r border-black flex flex-col gap-3 mb-6 md:mb-0">
+      <h2 class="text-2xl font-newspaper-title mb-3">Contact</h2>
+
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <span class="badge">📧</span>
+          <div>
+            <span
+              class="block text-[9px] font-black uppercase text-black/40 italic"
+              >Direct Line</span
             >
             <a
-              href="https://github.com/ARDP"
-              target="_blank"
-              class="newspaper-link text-xs font-bold italic">GitHub/ARDP</a
+              href="mailto:alexandreirdp@gmail.com"
+              class="newspaper-link font-bold text-sm"
+              >alexandreirdp@gmail.com</a
             >
           </div>
         </div>
+        <div class="flex flex-col gap-1">
+          <div class="flex items-center gap-2">
+            <span class="badge">🔗</span>
+            <span
+              class="block text-[9px] font-black uppercase text-black/40 italic"
+              >NetWork</span
+            >
+          </div>
+          <a
+            href="https://linkedin.com/in/alexandreidelgadillo"
+            target="_blank"
+            class="newspaper-link text-xs font-bold italic"
+            >LinkedIn/alexandreidelgadillo</a
+          >
+          <a
+            href="https://github.com/ARDP"
+            target="_blank"
+            class="newspaper-link text-xs font-bold italic">GitHub/ARDP</a
+          >
+        </div>
       </div>
     </div>
 
+    <!-- DAILY LAUGH -->
     <div
-      class="p-4 md:border-r border-black flex flex-col items-center text-center paper-mid"
+      class="p-4 md:border-r border-black flex flex-col md:items-center items-start md:text-center text-left paper-mid mb-6 md:mb-0"
     >
-      <h2 class="text-2xl font-newspaper-title mb-4">Daily Laugh</h2>
+      <h2 class="text-2xl font-newspaper-title mb-3">Daily Laugh</h2>
       <div
-        class="font-newspaper-text text-sm italic leading-snug border-l-2 border-black pl-4"
+        class="font-newspaper-text text-sm italic leading-snug halftone border-l-2 border-black p-2 md:pl-4 pl-2 w-full"
       >
-        <p>
-          "Why do programmers prefer dark mode? Because light attracts bugs!"
-        </p>
+        "Why do programmers prefer dark mode? Because light attracts bugs!"
       </div>
     </div>
 
+    <!-- TECH CONSULT + DOG -->
     <div class="p-4 flex flex-col items-center gap-4 relative overflow-visible">
       <div
         class="absolute top-2 right-2 bg-red-600 text-white text-[8px] font-black px-2 py-1 rotate-12 shadow-md z-10 border border-black uppercase tracking-tighter"
       >
-        Available
+        Limited time
       </div>
       <div
-        class="coupon rotate-[-2deg] border-2 border-dashed border-black p-3 bg-[#E07A3F] shadow-md text-center w-full max-w-[180px]"
+        class="coupon rotate-[-2deg] border-2 border-dashed border-black p-3 shadow-md text-center w-full max-w-[150px]"
       >
         <p class="font-newspaper-title text-xs text-white">TECH CONSULT</p>
         <p class="text-[9px] font-bold text-white uppercase mt-1">
           30 MIN SESSION
         </p>
       </div>
-      <img src="/dog3.png" class="w-[140px] h-auto contrast-125" alt="Mascot" />
+      <img
+        src="/dog3.png"
+        class="w-[130px] h-auto contrast-125 -mt-2"
+        alt="Mascot"
+      />
     </div>
   </div>
 
+  <!-- FOOTER BAR -->
   <div
-    class="mt-8 border-t-4 border-black py-4 flex flex-col md:flex-row md:justify-between items-center gap-4"
+    class="mt-6 border-t-4 border-black py-3 flex flex-col md:flex-row md:justify-between items-center gap-3"
   >
-    <div class="text-[10px] uppercase tracking-widest flex gap-8">
+    <div
+      class="text-[10px] uppercase tracking-widest flex gap-6 md:gap-8 text-center md:text-left"
+    >
       <span>Valencia, VE</span>
       <span class="font-bold">Vol. 1 · 10-Year Edition</span>
       <span>Page 01 · 2026</span>
     </div>
-    <div class="flex flex-col items-end opacity-90">
-      <div class="flex gap-[1px] h-8">
+    <div class="hidden md:flex flex-col items-end opacity-50">
+      <div class="flex gap-[1px] h-6">
         <div class="w-[2px] bg-black"></div><div class="w-[1px] bg-black">
-        </div><div class="w-[4px] bg-black"></div><div class="w-[1px] bg-black">
-        </div><div class="w-[1px] bg-black"></div><div class="w-[2px] bg-black">
-        </div><div class="w-[1px] bg-black"></div><div class="w-[5px] bg-black">
-        </div><div class="w-[1px] bg-black"></div><div class="w-[2px] bg-black">
-        </div><div class="w-[1px] bg-black"></div><div class="w-[4px] bg-black">
-        </div><div class="w-[1px] bg-black"></div><div class="w-[1px] bg-black">
-        </div><div class="w-[3px] bg-black"></div><div class="w-[2px] bg-black">
-        </div><div class="w-[1px] bg-black"></div>
+        </div><div class="w-[4px] bg-black"></div>
+        <div class="w-[1px] bg-black"></div><div class="w-[1px] bg-black">
+        </div><div class="w-[2px] bg-black"></div>
+        <div class="w-[1px] bg-black"></div><div class="w-[5px] bg-black"></div>
+        <div class="w-[1px] bg-black"></div><div class="w-[2px] bg-black"></div>
+        <div class="w-[1px] bg-black"></div><div class="w-[4px] bg-black"></div>
+        <div class="w-[1px] bg-black"></div><div class="w-[1px] bg-black"></div>
+        <div class="w-[3px] bg-black"></div><div class="w-[2px] bg-black"></div>
+        <div class="w-[1px] bg-black"></div>
       </div>
     </div>
   </div>

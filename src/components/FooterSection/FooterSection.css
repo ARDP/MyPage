@@ -1,19 +1,47 @@
+.coupon {
+  transform: rotate(-2deg);
+  background-color: #e07a3f;
+}
 
-  .coupon {
-    transform: rotate(-0.5deg);
-    background-color: #e07a3f;
-  }
-  .newspaper-link {
-    text-decoration: none;
-    font-weight: 700;
-    color: #111;
-    border-bottom: 1px dashed #111;
-    transition: all 0.2s ease-in-out;
-    word-break: break-word;
-    overflow-wrap: anywhere;
-  }
+.newspaper-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: #111;
+  border-bottom: 1px dashed #111;
+  transition: all 0.2s ease-in-out;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
 
-  .newspaper-link:hover {
-    color: #222;
-    border-bottom: 1px solid #222;
-  }
+.newspaper-link:hover {
+  color: #222;
+  border-bottom: 1px solid #222;
+}
+
+.badge {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 1px 1px 0 #999;
+}
+
+.halftone {
+  position: relative;
+}
+
+.halftone::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(var(--dot-color, #000) 1px, transparent 1px);
+  background-size: 5px 5px;
+  opacity: 0.15;
+  z-index: 0;
+}
+
