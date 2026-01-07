@@ -1,6 +1,47 @@
 ---
 import "./ProjectSection.css"
 import MobileProjectCard from "../MobileProjectCard/MobileProjectCard.astro"
+const projects = [
+  {
+    title: "HelloFund",
+    description:
+      "Led the migration to React/Next.js and integrated Salesforce and Stripe. Engineered a high-security donation pipeline enabling non-profits to reach their fundraising goals through a stable, modern architecture.",
+    href: "https://www.capicua.com/work/hellofund",
+    desktopColSpan: "md:col-span-3",
+    bgColor: "bg-white",
+  },
+  {
+    title: "Power Pickleball",
+    description:
+      "Architected league management tools and community profiles for tournament organizers.",
+    href: "https://www.capicua.com/work/power-pickleball",
+    desktopColSpan: "md:col-span-1",
+    bgColor: "bg-[#f0f0f0]",
+  },
+  {
+    title: "StackSource",
+    description:
+      "Modernized real estate SaaS via TypeScript enhancements and modular React structures during GCP migration.",
+    href: "https://www.capicua.com/work/stacksource",
+    desktopColSpan: "md:col-span-1",
+    bgColor: "bg-white",
+  },
+  {
+    title: "WurrlyEdu",
+    description:
+      "LMS integration for music education. Scaled architecture to support a massive surge in active students during digital transitions.",
+    href: "https://www.capicua.com/work/wurrlyedu",
+    desktopColSpan: "md:col-span-3",
+    bgColor: "bg-[#f0f0f0]",
+  },
+  {
+    title: "MetaReport",
+    description: "Analytics dashboards with Next.js, GraphQL, and Recharts.",
+    href: "https://metareport.io",
+    desktopColSpan: "md:col-span-4",
+    bgColor: "bg-[#f9f9f9]",
+  },
+]
 ---
 
 <section class="mb-10">
@@ -11,31 +52,15 @@ import MobileProjectCard from "../MobileProjectCard/MobileProjectCard.astro"
   </div>
 
   <div class="grid grid-cols-1 gap-6 md:hidden">
-    <MobileProjectCard
-      title="HelloFund"
-      description="Led the migration to React/Next.js and integrated Salesforce and Stripe. Engineered a high-security donation pipeline enabling non-profits to reach their fundraising goals."
-      href="https://www.capicua.com/work/hellofund"
-    />
-    <MobileProjectCard
-      title="Power Pickleball"
-      description="Architected league management tools and community profiles for tournament organizers."
-      href="https://www.capicua.com/work/power-pickleball"
-    />
-    <MobileProjectCard
-      title="StackSource"
-      description="Modernized real estate SaaS via TypeScript enhancements and modular React structures during GCP migration."
-      href="https://www.capicua.com/work/stacksource"
-    />
-    <MobileProjectCard
-      title="WurrlyEdu"
-      description="LMS integration for music education. Scaled architecture to support a massive surge in active students during digital transitions."
-      href="https://www.capicua.com/work/wurrlyedu"
-    />
-    <MobileProjectCard
-      title="MetaReport"
-      description="Analytics dashboards with Next.js, GraphQL, and Recharts."
-      href="https://metareport.io"
-    />
+    {
+      projects.map((project) => (
+        <MobileProjectCard
+          title={project.title}
+          description={project.description}
+          href={project.href}
+        />
+      ))
+    }
   </div>
 
   <div class="hidden md:grid md:grid-cols-4 gap-6">
