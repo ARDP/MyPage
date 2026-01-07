@@ -9,7 +9,7 @@ const projects = [
       "Led the migration of HelloFund to React/Next.js, integrating Salesforce and Stripe. Engineered a high-security donation pipeline, improving platform stability and ensuring non-profits could reliably reach fundraising goals.",
     href: "https://www.capicua.com/work/hellofund",
     desktopColSpan: "md:col-span-3",
-    bgColor: "bg-white",
+    bgColor: "#e6f6f3",
   },
   {
     title: "Power Pickleball",
@@ -17,7 +17,7 @@ const projects = [
       "Architected tournament management tools and community profiles for organizers. Improved scheduling efficiency, player engagement, and streamlined data handling for league operations.",
     href: "https://www.capicua.com/work/power-pickleball",
     desktopColSpan: "md:col-span-1",
-    bgColor: "bg-[#f0f0f0]",
+    bgColor: "#c9f2ec",
   },
   {
     title: "StackSource",
@@ -25,7 +25,7 @@ const projects = [
       "Modernized the real estate SaaS platform by implementing TypeScript enhancements and modular React architecture. Migrated core services to Google Cloud, improving performance, maintainability, and scalability.",
     href: "https://www.capicua.com/work/stacksource",
     desktopColSpan: "md:col-span-1",
-    bgColor: "bg-white",
+    bgColor: "#e6eef9",
   },
   {
     title: "WurrlyEdu",
@@ -33,7 +33,7 @@ const projects = [
       "Integrated a Learning Management System for music education and scaled architecture to handle a surge in active students. Optimized backend processes and APIs, reduced latency, and improved UX with React and TypeScript.",
     href: "https://www.capicua.com/work/wurrlyedu",
     desktopColSpan: "md:col-span-3",
-    bgColor: "bg-[#f0f0f0]",
+    bgColor: "#fff4cc",
   },
   {
     title: "MetaReport",
@@ -41,7 +41,7 @@ const projects = [
       "Delivered real-time analytics dashboards with Next.js, GraphQL, and Recharts. Supervised a junior developer and enabled actionable insights for data-driven decision-making.",
     href: "https://metareport.io",
     desktopColSpan: "md:col-span-4",
-    bgColor: "bg-[#f9f9f9]",
+    bgColor: "#f9f9f9",
   },
   // Additional projects from CV
   {
@@ -50,7 +50,7 @@ const projects = [
       "Developed the full Flavor Finder front end with React/TypeScript. Integrated AWS Lambda for serverless data handling, improving performance and scalability.",
     href: "https://tipxy.com/pages/flavor-finder",
     desktopColSpan: "md:col-span-3",
-    bgColor: "bg-[#fff9f0]",
+    bgColor: "#fde6e1",
   },
   {
     title: "Swell",
@@ -58,7 +58,7 @@ const projects = [
       "Integrated HubSpot, Algolia, ShipStation, and Yotpo into the e-commerce platform. Streamlined workflows and improved customer experience.",
     href: "https://swell.is",
     desktopColSpan: "md:col-span-1",
-    bgColor: "bg-[#5c42ff]",
+    bgColor: "#ebe7ff",
   },
   // {
   //   title: "Congreso Interdominacional de Misiones Mundiales 2019",
@@ -94,6 +94,7 @@ const projects = [
           title={project.title}
           description={project.description}
           href={project.href}
+          bgColor={project.bgColor}
         />
       ))
     }

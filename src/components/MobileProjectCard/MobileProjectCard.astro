@@ -1,9 +1,10 @@
 ---
-const { title, description, href } = Astro.props
+const { title, description, href, bgColor } = Astro.props
 ---
 
 <div
-  class="border-2 border-black p-5 bg-[#f0f0f0]
+  style={`background-color: ${bgColor};`}
+  class="border-2 border-black p-5
          shadow-[4px_4px_0px_black]
          flex flex-col justify-between gap-4"
 >
