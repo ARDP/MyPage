@@ -1,0 +1,19 @@
+
+  .coupon {
+    transform: rotate(-0.5deg);
+    background-color: #e07a3f;
+  }
+  .newspaper-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: #111;
+    border-bottom: 1px dashed #111;
+    transition: all 0.2s ease-in-out;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .newspaper-link:hover {
+    color: #222;
+    border-bottom: 1px solid #222;
+  }

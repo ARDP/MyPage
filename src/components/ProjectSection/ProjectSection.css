@@ -1,0 +1,22 @@
+
+  .card-pop:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+  }
+  /* Links / Misc */
+  .pow-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    padding: 6px 16px;
+    font-weight: 700;
+    font-family: "Roboto Slab", serif;
+    border: 2px solid #000;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    z-index: 10;
+    transform: translate(0, 0);
+    box-shadow: 1px 1px 0 #999;
+  }
